@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(247, 247, 247);
+}
+#globalwrap {
+    margin-left : 300px;
+    margin-right : 300px;
+    width : 1100px;
+    height : 600px;
+    font-size: 28px;
+}
+#logo_wrap {
+    width : 500px;
+    float : left;    
+    padding-top: 200px;
+    padding-left: 130px;
+}
+#login_wrap {
+    background-color: white;
+    width : 400px;
+    height : 320px;
+    float : right;
+    margin-top : 160px;
+    text-align : center;
+    line-height : 30px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+#div01 {
+    margin-top : 30px;
+    color : black;
+}
+#login_wrap>input :focus{
+    outline: 1px solid rgb(54, 113, 209);
+}
+#login_wrap>input[type = text] {
+    width : 340px;
+    height : 40px;
+    margin-top : 10px;
+    padding-top : 10px;
+    padding-left : 5px;
+    border : 1px solid #EEE;
+    cursor : auto;
+    
+}
+
+#login_wrap>input[type = submit] {
+    width : 340px;
+    height : 50px;
+    margin : 5px;
+
+    background-color: #418cee;
+    color : white;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    border-radius: 5px;
+    border : none;
+
+    cursor : pointer;
+}
+#login_wrap2>input[type = button] {
+    width : 137px;
+    height : 48px;
+    margin : 5px;
+    margin-top : 12px;
+    text-align: center;
+
+    background-color : #42B72A;
+    color : white;
+
+    font-size : 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    border : none;
+
+    cursor : pointer;
+}
+
+#login_wrap2 {
+    margin-top : 10px;
+    margin-left : 20px;
+    margin-right: 20px;
+    margin-bottom : 10px;
+}
+
+#login_wrap3 {
+    margin-left : 20px;
+    margin-right : 20px;
+    font-weight: lighter;
+    color :rgb(209, 203, 203)
+}
+footer{
+    height: 200px;
+    margin: 0, auto;
+   
+} 
+.footer a{
+    font-size: small;
+    font-weight: normal;
+    text-decoration: none;
+    color: grey;  
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+.footer hr{
+    width: 100%
+}
+.lang{
+    width: 60%;
+    height: 30%; 
+    margin: 0px auto;
+    text-align: left;
+}

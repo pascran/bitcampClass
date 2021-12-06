@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<e:DomainDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:e="http://exerd.tomato.com/model" UUID="DDefinition_ER3-YEEgEeytU4dbo4zd6w" productId="com.tomato.db.oracle_10g" version="3.3.13.20210616-1553">
+  <domain UUID="Domain_ER3-YUEgEeytU4dbo4zd6w" name="문자" suggestedDataType="VARCHAR(255)">
+    <domain UUID="Domain_ER3-YkEgEeytU4dbo4zd6w" name="주민등록번호" suggestedDataType="VARCHAR(13)"/>
+    <domain UUID="Domain_ER3-Y0EgEeytU4dbo4zd6w" name="주소"/>
+    <domain UUID="Domain_ER3-ZEEgEeytU4dbo4zd6w" name="웹주소"/>
+    <domain UUID="Domain_ER3-ZUEgEeytU4dbo4zd6w" name="전화번호" suggestedDataType="VARCHAR(30)"/>
+    <domain UUID="Domain_ER3-ZkEgEeytU4dbo4zd6w" name="이메일" suggestedDataType="VARCHAR(40)"/>
+    <domain UUID="Domain_ER3-Z0EgEeytU4dbo4zd6w" name="이름" suggestedDataType="VARCHAR(50)"/>
+  </domain>
+  <domain UUID="Domain_ER3-aEEgEeytU4dbo4zd6w" name="숫자" suggestedDataType="INTEGER">
+    <domain UUID="Domain_ER3-aUEgEeytU4dbo4zd6w" name="금액"/>
+  </domain>
+  <domain UUID="Domain_ER3-akEgEeytU4dbo4zd6w" name="일시" suggestedDataType="DATE"/>
+  <domain UUID="Domain_ER3-a0EgEeytU4dbo4zd6w" name="객체" suggestedDataType="BLOB">
+    <domain UUID="Domain_ER3-bEEgEeytU4dbo4zd6w" name="이미지" suggestedDataType=""/>
+    <domain UUID="Domain_ER3-bUEgEeytU4dbo4zd6w" name="오디오"/>
+  </domain>
+  <domain UUID="Domain_ER3-bkEgEeytU4dbo4zd6w" name="마당서적">
+    <domain UUID="Domain_ER3-b0EgEeytU4dbo4zd6w" name="마당_숫자">
+      <domain UUID="Domain_ER3-cEEgEeytU4dbo4zd6w" name="번호" suggestedDataType="NUMBER(10)"/>
+      <domain UUID="Domain_ER3-cUEgEeytU4dbo4zd6w" name="판매금액" suggestedDataType="NUMBER(6)"/>
+      <domain UUID="Domain_ER3-ckEgEeytU4dbo4zd6w" name="단가" suggestedDataType="NUMBER(6)"/>
+    </domain>
+    <domain UUID="Domain_ER3-c0EgEeytU4dbo4zd6w" name="마당_문자">
+      <domain UUID="Domain_ER3-dEEgEeytU4dbo4zd6w" name="마당_이름" suggestedDataType="VARCHAR2(40)"/>
+      <domain UUID="Domain_ER3-dUEgEeytU4dbo4zd6w" name="마당_주소" suggestedDataType="VARCHAR2(40)"/>
+      <domain UUID="Domain_ER3-dkEgEeytU4dbo4zd6w" name="마당_전화" suggestedDataType="VARCHAR2(40)"/>
+    </domain>
+    <domain UUID="Domain_ER3-d0EgEeytU4dbo4zd6w" name="마당_날짜">
+      <domain UUID="Domain_ER3-eEEgEeytU4dbo4zd6w" name="일자" suggestedDataType="TIMESTAMP"/>
+    </domain>
+  </domain>
+</e:DomainDefinition>
