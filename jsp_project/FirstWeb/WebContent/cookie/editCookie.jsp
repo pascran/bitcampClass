@@ -1,8 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@page import="util.CookieBox"%>
 
 <%
 	Cookie[] cookies = request.getCookies();
+
+	//2021.12.09
+	CookieBox cookieBox = new CookieBox(request);
 %>
 
 <!DOCTYPE html>
@@ -28,6 +32,14 @@
 						// 같은 이름의 쿠키는 없으므로 찾으면 break
 					}
 				}
+			}
+			/////////////////////////////////////////
+			//CookieBox  이용한 수정
+			
+			//존재 유무 확인 -> 쿠키 생성 -> 응답에 추가
+			if(cookieBox.exists("uid")){
+				//static 메소드도 참조변수를 통한 호출이 가능
+				response.addCookie(cookieBox.createCookie("uid", "hot"));
 			}
 		%>
 

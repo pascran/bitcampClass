@@ -1,8 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@page import="util.CookieBox"%>
 
 <%
 	Cookie[] cookies = request.getCookies();
+
+	//2021.12.09
+	CookieBox cookieBox = new CookieBox(request);
 %>
 
 <!DOCTYPE html>
@@ -32,6 +36,11 @@
 						// 같은 이름의 쿠키는 없으므로 찾으면 break
 					}
 				}
+			}
+			/////////////////////////////////////////
+			// CookieBox 를 이용한 쿠키 삭제
+			if(cookieBox.exists("uid")){
+				response.addCookie(CookieBox.createCookie("uid", "cool", 0));
 			}
 		%>
 
