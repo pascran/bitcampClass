@@ -11,7 +11,7 @@ public class DriverLoader extends HttpServlet {
 	
 	public void init(ServletConfig config) throws ServletException {
 		
-		String driverString = config.getInitParameterNames("driver");
+		String driverString = config.getInitParameter("driver");
 		
 		// DB 드라이버 로드
 		

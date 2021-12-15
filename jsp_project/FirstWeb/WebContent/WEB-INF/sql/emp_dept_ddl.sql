@@ -63,4 +63,4 @@ insert into project.emp values( 7900, 'JAMES', 'CLERK', 7698, STR_TO_DATE('3-12-
 
 insert into project.emp values( 7934, 'MILLER', 'CLERK', 7782, STR_TO_DATE('23-1-1982','%d-%m-%Y'), 1300, null, 10);
 
-select * from project.emp;
+select * from project.emp;deptno
