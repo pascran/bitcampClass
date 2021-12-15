@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServlet;
 public class DriverLoader extends HttpServlet {
 	
 	public void init(ServletConfig config) throws ServletException {
+		
+		String driverString = config.getInitParameterNames("driver");
+		
 		// DB 드라이버 로드
 		
 		try {
