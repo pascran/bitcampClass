@@ -1,7 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <!-- meta -->
+<!-- meta -->
+
 <!-- CSS -->
-<link rel = "stylesheet" href = "${pageContext.request.contextPath}/op/css/default.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/default.css">
+
 <!-- JS -->
-<script src ="${pageContext.request.contextPath}/op/js/index.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>

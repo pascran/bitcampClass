@@ -1,32 +1,61 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	request.setCharacterEncoding("utf-8");
+%>
 <!DOCTYPE html>
-<html lang = "ko">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
 
-<% request.setCharacterEncoding("UTF-8"); %>
-
-	<h1>ID : <%= request.getParameter("id") %></h1>
-	<h1>PW : <%= request.getParameter("pw") %></h1>
-	<h1>UserName : <%= request.getParameter("userName") %></h1>
-	<h1>Comment : <%= request.getParameter("comment") %></h1>
-	<h1>Gender : <%= request.getParameter("gender") %></h1>
-
-<% 
-		String [] interests = request.getParameterValues("interest");
-		if(interests == null){
-			out.println("<h1>interset : 선택된 관심사가 없습니다.  </h1>");
-		} else {
-			for(int i=0; i< interests.length;i++){
-				out.println("<h1>interset : "+ interests[i] +"</h1>");
-			}
-		}
-	%>
-	
-	<h1>byear : <%= request.getParameter("byear") %></h1>
+	<h1>회원 가입 데이터</h1>
+	<table>
+		<tr>
+			<td>아이디</td>
+			<td>
+				<%
+					String uid = request.getParameter("userid");
+					out.println(uid);
+				%>
+			</td>
+		</tr>		
+		<tr>
+			<td>비밀번호</td>
+			<td><%= request.getParameter("pw") %></td>
+		</tr>		
+		<tr>
+			<td>이름</td>
+			<td><%= request.getParameter("username") %></td>
+		</tr>		
+		<tr>
+			<td>자기소개</td>
+			<td><%= request.getParameter("comment") %></td>
+		</tr>		
+		<tr>
+			<td>성별</td>
+			<td><%= request.getParameter("gender") %></td>
+		</tr>		
+		<tr>
+			<td>관심사</td>
+			<td>
+				<% 
+					String[] interests = request.getParameterValues("interest");
+				
+					if(interests != null) {
+						for(int i=0; i<interests.length; i++){
+							out.println("<div>"+interests[i]+"</div>");
+						}
+					}
+				%>
+			</td>
+		</tr>		
+		<tr>
+			<td>태어난 년도</td>
+			<td><%= request.getParameter("byear") %></td>
+		</tr>
+	</table>
 </body>
 </html>

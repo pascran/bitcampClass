@@ -1,37 +1,39 @@
+
 /* 웹폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR&display=swap');
 
 /* 기본설정 */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-body{
-    background-color: #eee;
+body {
+    background-color: #EEE;
 }
 
-.margin_tb_5{
-margin-top: 5px;
-margin-bottom: 10px;
-}
-
-.font_gray{
+.font_gray {
     color: #666;
 }
 
-.lineheight_180per{
+.margin_tb_5 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.lineheight_180per {
     line-height: 180%;
 }
 
+
 /* 타이틀 폰트 */
-.title_font{
+.title_font {
     font-family: 'Jua', sans-serif;
 }
 
-/* main_wrap 설정 */
-#main_wrap{
+/* main_wrap  설정*/
+#main_wrap {
     background-color: white;
 
     width: 778px;
@@ -43,100 +45,104 @@ margin-bottom: 10px;
     border-radius: 5px;
 
     margin: 10px auto;
-    /* 상하/좌우 */
 
-    box-shadow: 3px 3px 10px #ccc;
+    box-shadow: 3px 3px 10px #ccc ;
+
 }
 
+
 /* header 설정 */
-header{
+header {
     padding: 30px;
 }
 
 /* 네비게이션 설정 */
-nav{
+nav {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 
     overflow: hidden;
 }
 
-nav>ul{
+nav>ul {
     float: left;
     list-style: none;
 }
 
-nav>ul>li{
+nav>ul>li {
     float: left;
     padding: 5px 15px;
 }
 
-nav>div{
+nav>div {
     float: right;
 }
 
-/* 검색영역 */
-nav input{
+/* 검색 영역  */
+nav input {
     border: 1px solid #ccc;
     padding: 3px 20px;
-    
+
     margin-top: 3px;
 }
 
-nav input[type=text]{
+nav input[type=text] {
     width: 100px;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 0 0 20px;
 }
 
-nav input[type=button]{
-    border-radius: 0px 20px 20px 0px;
+nav input[type=button] {
+    border-radius: 0 20px 20px 0;
 
     margin-left: -1px;
     margin-right: 5px;
 }
 
+
 /* Contents 영역 설정 */
-#contents_wrap{
+#contents_wrap {
     overflow: hidden;
 }
 
-#contents_wrap>section{
+#contents_wrap>section {
     width: 600px;
     float: left;
 }
 
-#contents_wrap>aside{
+#contents_wrap>aside {
     width: 170px;
     float: right;
 }
 
-#contents_wrap>section>article{
+
+#contents_wrap>section>article {
     padding: 25px;
 
     border-bottom: 1px solid #ccc;
+
+    
 }
 
-#contents_wrap>section>article>img{
+#contents_wrap>section>article>img {
     width: 500px;
 }
 
 /* aside 영역 설정 */
-/* #contents_wrap>aside{
+/* #contents_wrap>aside {
     padding-top: 30px;
 } */
-
-#contents_wrap>aside>h3{
-    margin-top: 30px;
+#contents_wrap>aside>h3 {
+    margin-top:30px;
 }
 
-#contents_wrap>aside>ul>li{
+#contents_wrap>aside>ul>li {
     list-style: none;
     padding-left: 10px;
 }
 
 /* footer 설정 */
-footer{
+footer {
     height: 50px;
     text-align: center;
-    line-height: 50px;
-}
+    line-height: 50px;;
+} 
