@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bitcamp</groupId>
 	<artifactId>mvc</artifactId>
-	<name>Spring_MVC</name>
+	<name>Spring-MVC</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
