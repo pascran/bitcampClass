@@ -2,6 +2,8 @@ package mm.domain;
 
 import java.util.Date;
 
+import mm.exception.IdPasswordNotMatchingException;
+
 public class Member {
 
 	// 아이디, 이메일, 비밀번호, 이름, 가입일시
@@ -10,7 +12,7 @@ public class Member {
 	private String password;
 	private String name;
 	private Date regDate;
-	
+
 	public Member(long id, String email, String password, String name, Date regDate) {
 		this.id = id;
 		this.email = email;
@@ -59,13 +61,15 @@ public class Member {
 		this.regDate = regDate;
 	}
 	
-	//비밀번호 변경 메소드 
-	
-	public void changePassword(String oldPw, String newPw) throws Exception {
+	// 비밀번호 변경 메소드
+	public void changePassword(String oldPw, String newPw) throws IdPasswordNotMatchingException {
+		
 		if(!this.password.equals(oldPw)) {
-			throw new Exception("비밀번호가 일치하지 않습니다.");
+			throw new IdPasswordNotMatchingException("비빌번호 일치하지 않습니다.");
 		}
 		
 		this.password = newPw;
+		
 	}
+
 }
